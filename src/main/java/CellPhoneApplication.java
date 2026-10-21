@@ -76,6 +76,10 @@ public class CellPhoneApplication {
 
         display(phone2);
 
+        // call phones
+        phone1.dial(phone2.getPhoneNumber());
+        phone2.dial(phone1.getPhoneNumber());
+
         scnr.close();
     }
 
